@@ -5,9 +5,15 @@
 <link rel="shortcut icon" href="/images/favicon.ico"/>
 <title>${page.title} - ${site.author}</title>
 <meta name="author" content="${site.author}"/>
-<meta name="description" content="<% def desc = page.title ?:  site.description %> ${desc}"/>
+<meta name="description" content="<% def desc = page.description ?:  site.description %> ${desc}"/>
 <meta name="keywords"
       content="${page.title}, ${site.title}, ${site.author}<% if (page.categories) { %>, <%}%><%page.categories?.each {item ->%>${item}<% if (page.categories?.last() != item) { %>,<%}%> <%}%>"/>
+<!-- Chrome, Firefox OS, Opera and Vivaldi -->
+<meta name="theme-color" content="#009587"/>
+<!-- Windows Phone -->
+<meta name="msapplication-navbutton-color" content="#009587"/>
+<!-- iOS Safari -->
+<meta name="apple-mobile-web-app-status-bar-style" content="#009587"/>
 
 <meta content="${site.title}" property="og:site_name"/>
 <% if (page.title) { %>
