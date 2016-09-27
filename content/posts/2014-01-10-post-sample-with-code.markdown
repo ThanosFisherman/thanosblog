@@ -13,9 +13,8 @@ sharing: true                     # (optional) disables/enables sharing options 
 asides: [ asides/recent_posts.html, asides/github.html,
   asides/about.html]              # (optional) asides to include into the post page, all asides are included by default
 ---
-asfasfafasfsffasfsfsfafasfasfasfasfasfsfsafsafsafsfsafasffasfasfasfafafasfsa
-fggsgdsgsggsgsgdsgdggsgsgdsgdsgsgd
-
+lelelelell easfa fsafafasfsafasfasfasfas elelelelel launches laala lorem ipsum lelelelalalad ggggggggggggggggg gggggggggggggggg
+xaxaaaxaxa lalelelfelfelfl wtf?
 <!--more-->
 
 ##Example with line numbers:
