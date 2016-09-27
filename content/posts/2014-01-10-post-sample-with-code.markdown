@@ -11,6 +11,8 @@ sharing: true                     # (optional) disables/enables sharing options 
 asides: [ asides/recent_posts.html, asides/github.html,
   asides/about.html]              # (optional) asides to include into the post page, all asides are included by default
 ---
+asfasfafasfsffasfsfsfafasfasfasfasfasfsfsafsafsafsfsafasffasfasfasfafafasfsa
+fggsgdsgsggsgsgdsgdggsgsgdsgdsgsgd
 
 <!--more-->
 
