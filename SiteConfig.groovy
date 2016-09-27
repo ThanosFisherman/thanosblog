@@ -13,7 +13,7 @@ base_dir = System.getProperty('user.dir')
 theme_dir = "${base_dir}/theme"
 
 features {
-    highlight = 'none' // 'none', 'pygments'
+    highlight = 'pygments' // 'none', 'pygments'
     compass = 'auto'
     markdown = 'txtmark'   // 'txtmark', 'pegdown'
 }
