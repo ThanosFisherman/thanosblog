@@ -6,8 +6,12 @@
 <title>${page.title} - ${site.author}</title>
 <meta name="author" content="${site.author}"/>
 <meta name="description" content="<% def desc = page.description ?:  site.description %> ${desc}"/>
+<% if (page.keywords) { %>
+<meta name='description' content='${page.keywords}'/>
+<% }else{ %>
 <meta name="keywords"
       content="${page.title}, ${site.title}, ${site.author}<% if (page.categories) { %>, <%}%><%page.categories?.each {item ->%>${item}<% if (page.categories?.last() != item) { %>,<%}%> <%}%>"/>
+<% } %>
 <!-- Chrome, Firefox OS, Opera and Vivaldi -->
 <meta name="theme-color" content="#009587"/>
 <!-- Windows Phone -->
@@ -36,10 +40,10 @@
 <% } %>
 <% if (page.date) { %>
 <meta content="${page.date}" property="article:published_time"/>
-<meta content="/about.html" property="article:author"/>
+<meta content="${site.url + '/about.html'}" property="article:author"/>
 <% } %>
 <% if (page.image) {%>
-<meta content="/images/posts/${ page.image }" property="og:image"/>
+<meta content="${site.url + '/images/posts/' + page.image}" property="og:image"/>
 <% } %>
 <% if (page.categories) {%>
 <% for (category in page.categories) { %>
