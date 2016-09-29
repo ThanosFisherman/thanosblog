@@ -71,7 +71,7 @@ author = "Thanos Psaridis"
 description = 'A website about Android programming'
 
 social {
-    twitter_username = 'thanosfish'
+    twitter_username = 'thanosfisherman'
     facebook_username = 'ThanosFisherman'
     disqus_username = 'thanosfisherman'
 }
