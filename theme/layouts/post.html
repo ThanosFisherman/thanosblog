@@ -33,11 +33,10 @@ layout: default
         <a class="next pull-right" href="${link page.next_post.url}">${page.next_post.title} &raquo;</a>
         <% } %>
     </div>
-    <br/>
+    <br/><br/>
 
     <% if (site.social.disqus_username && page.comments == true) { %>
     <section>
-        <h1>Comments</h1>
         <div id="disqus_thread" aria-live="polite">${include "disqus.html"}</div>
     </section>
     <% } %>

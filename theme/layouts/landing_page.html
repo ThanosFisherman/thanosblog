@@ -7,11 +7,11 @@ layout: default
         def brief = item.render().content.split('<!--more-->').head() %>
         <div class="list-group-item">
             <div class="row-action-primary">
-                <i class="${item.icon}"></i>
+                <p style="margin-top:4px"><i class="${item.icon}"></i></p>
             </div>
             <div class="row-content">
-                <div class="least-content">${item.date}</div>
-                <p><h4 class="list-group-item-heading"><a href="${link item.url}">${item.title}</a></h4></p>
+                <p style="margin-bottom:16px"><div class="least-content">${item.date}</div></p>
+                <h4 class="list-group-item-heading"><a href="${link item.url}">${item.title}</a></h4>
 
                 <p class="list-group-item-text">${brief}</p>
             </div>
@@ -19,6 +19,7 @@ layout: default
         <div class="list-group-separator"></div>
         <%}%>
     </div>
+
     <div class="PageNavigation">
         <% if (page.paginator?.prev_page) { %>
         <a class="next pull-right" href="${link page.paginator.prev_page}">Newer &rarr;</a>
