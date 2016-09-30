@@ -68,7 +68,7 @@ deploy = new GHPagesDeployer(site).deploy
 title = "Development adventures"
 logo = "/images/avatar.jpg"
 author = "Thanos Psaridis"
-description = 'A website about Android programming'
+description = 'A blog mostly about my Android programming experience as well as other tools I encounter through time'
 
 social {
     twitter_username = 'thanosfisherman'
