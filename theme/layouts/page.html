@@ -6,6 +6,17 @@ layout: default
     <h4 class="home-subtitle">${page.subtitle}</h4>
     <% } %>
     <div>
-    	${content}
+        ${content}
     </div>
+    <hr/>
+    <% if (page.sharing) { %>
+    ${include "share-page.html"}
+    <hr/>
+    <% } %>
+    <br/>
+    <% if (site.social.disqus_username && page.comments == true) { %>
+    <section>
+        <div id="disqus_thread" aria-live="polite">${include "disqus.html"}</div>
+    </section>
+    <% } %>
 </div>
