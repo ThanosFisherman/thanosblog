@@ -1,13 +1,13 @@
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-<meta name="viewport" content="width=device-width">
-
-<link rel="shortcut icon" href="/images/favicon.ico"/>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
+<!--<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
 <title>${page.title} - ${site.author}</title>
+<link rel="shortcut icon" href="${r '/images/favicon.ico'}"/>
+<link rel="canonical" href="${site.url}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="author" content="${site.author}"/>
 <meta name="description" content="<% def desc = page.description ?:  site.description %> ${desc}"/>
 <% if (page.keywords) { %>
-<meta name='description' content='${page.keywords}'/>
+<meta name="keywords" content="${page.keywords}"/>
 <% }else{ %>
 <meta name="keywords"
       content="${page.title}, ${site.title}, ${site.author}<% if (page.categories) { %>, <%}%><%page.categories?.each {item ->%>${item}<% if (page.categories?.last() != item) { %>,<%}%> <%}%>"/>
@@ -18,15 +18,19 @@
 <meta name="msapplication-navbutton-color" content="#009587"/>
 <!-- iOS Safari -->
 <meta name="apple-mobile-web-app-status-bar-style" content="#009587"/>
+<!-- Facebook meta -->
+<meta content="${site.siteName}" property="og:site_name"/>
+<meta property="og:locale" content="${site.locale}" >
 
-<meta content="${site.title}" property="og:site_name"/>
 <% if (page.title) { %>
 <meta content="${page.title}" property="og:title"/>
 <% }else{ %>
 <meta content="${site.title}" property="og:title"/>
 <% } %>
-<% if (page.title) { %>
+<% if (page.layout == 'post') { %>
 <meta content="article" property="og:type"/>
+<meta content="${page.date}" property="article:published_time"/>
+<meta content="${site.url + '/about.html'}" property="article:author"/>
 <% }else{ %>
 <meta content="website" property="og:type"/>
 <% } %>
@@ -37,40 +41,41 @@
 <% } %>
 <% if (page.url) { %>
 <meta content="${site.url}${page.url}" property="og:url"/>
+<% } else { %>
+<meta content="${site.url}" property="og:url"/>
 <% } %>
-<% if (page.date) { %>
-<meta content="${page.date}" property="article:published_time"/>
-<meta content="${site.url + '/about.html'}" property="article:author"/>
-<% } %>
-<% if (page.image) {%>
-<meta content="${site.url + '/images/posts/' + page.image}" property="og:image"/>
+<% if (page.metaImage) {%>
+<meta content="${site.url + page.metaImage}" property="og:image"/>
+<% } else { %>
+<meta content="${site.url + site.logo}" property="og:image"/>
 <% } %>
 <% if (page.categories) {%>
+<meta content="${page.categories.first()}" property="article:section"/>
 <% for (category in page.categories) { %>
-<meta content="${category}" property="article:section"/>
+<meta content="${category}" property="article:tag"/>
 <% } %>
 <% } %>
-<% if (page.tags) { %>
-<% for (tag in page.tags) {%>
-<meta content="${ tag }" property="article:tag"/>
-<% } %>
-<% } %>
-<meta name="twitter:card" content="summary"/>
-<meta name="twitter:site" content="${site.social.twitter_username }"/>
-<meta name="twitter:creator" content="${ site.social.twitter_username }"/>
+<!-- twitter meta -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:site" content="@${site.social.twitter_username}"/>
+<meta property="twitter:creator" content="@${site.social.twitter_username }"/>
 <% if (page.title) { %>
-<meta name="twitter:title" content="${page.title}"/>
+<meta property="twitter:title" content="${page.title}"/>
 <% }else{ %>
-<meta name="twitter:title" content="${site.title}"/>
+<meta property="twitter:title" content="${site.title}"/>
 <% } %>
 <% if (page.url) {%>
-<meta name="twitter:url" content="${site.url}${page.url}"/>
+<meta property="twitter:url" content="${site.url}${page.url}"/>
+<% } else { %>
+<meta property="twitter:url" content="${site.url}"/>
 <% } %>
 <% if (page.description) { %>
-<meta name="twitter:description" content="${page.description}"/>
+<meta property="twitter:description" content="${page.description}"/>
 <% }else{ %>
-<meta name="twitter:description" content="${site.description}"/>
+<meta property="twitter:description" content="${site.description}"/>
 <% } %>
-<% if (page.headerimg) { %>
-<meta name="twitter:image:src" content="${site.url}/${page.headerimg}"/>
+<% if (page.metaImage) {%>
+<meta property="twitter:image" content="${site.url + page.metaImage}"/>
+<% } else { %>
+<meta property="twitter:image" content="${site.url + site.logo}"/>
 <% } %>

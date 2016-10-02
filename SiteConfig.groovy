@@ -66,9 +66,14 @@ gh_pages_url = 'git@github.com:ThanosFisherman/thanosfisherman.github.io.git' //
 deploy = new GHPagesDeployer(site).deploy
 
 title = "Development adventures"
-logo = "/images/avatar.jpg"
-author = "Thanos Psaridis"
+logo = '/images/mainimage.jpg'
+avatar = '/images/myavatar.jpg'
+firstName = 'Thanos'
+lastName = 'Psaridis'
+siteName = 'thanosfisherman'
+author = firstName + " " + lastName
 description = 'A blog mostly about my Android programming experience as well as other tools I encounter through time'
+locale = "en-US"
 
 social {
     twitter_username = 'thanosfisherman'
@@ -83,7 +88,7 @@ rss {
 }
 // Blog and Archive.
 posts_per_blog_page = 3             // the number of posts to display per blog page
-posts_per_archive_page = 10         // the number of posts to display per archive page
+posts_per_archive_page = 6         // the number of posts to display per archive page
 
 // Custom commands-line commands.
 commands = [
