@@ -73,7 +73,6 @@ lastName = 'Psaridis'
 siteName = 'thanosfisherman'
 author = firstName + " " + lastName
 description = 'A blog mostly about my Android programming experience as well as other tools I encounter through time'
-locale = "en-US"
 
 social {
     twitter_username = 'thanosfisherman'
