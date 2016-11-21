@@ -1,5 +1,4 @@
 .idea
-*.iml
 .DS_Store
 .cache
 .gradle
@@ -12,5 +11,5 @@ bin
 build
 out
 target
-/.site-0.7.+.dep
 /.sass-cache/
+/src/
