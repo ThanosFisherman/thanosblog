@@ -16,22 +16,22 @@ Hello World and welcome to my blog. This is the first post out of many that are 
 ${img src: 'https://media.giphy.com/media/dzaUX7CAG0Ihi/giphy.gif', alt: 'email image', title: 'Hello'}
 </center>
 
-###How I decided to make this blog
+### How I decided to make this blog
 Well there is a new trend around about static site generating that's supposed to set up a simple blog/website for everyone in just a few minutes.
 All the cool kids use it nowadays. So after reading about the benefits I thought this was a great idea and went for it.
 
-###What is a static site generator
+### What is a static site generator
 A static site generator is software that translates content from a text format into HTML and creates consistent look and feel across all the pages. Usually one
 can write posts in [Markdown] or [AsciiDoc] which is then converted into an HTML snippet, and then put into a larger HTML page. After generation, the resulted html
 files can be copied (deployed) to any basic webserver (even in your dropbox) that serves the plain HTML.
 
-###What are the benefits of static site generation
+### What are the benefits of static site generation
 Static site generators are popular within the technical crowd. They take the complexity off of the server (no database! no caching!)
 and put it on our local machine. Having just plain HTML makes the site more secure than traditional blogging platforms. It's hard to do an sql injection
 or similar types of attacks as there is no database involved most of the times, and you don't have to worry about the latest PHP security updates 
 it's all just plain HTML, CSS, and JavaScript man!
 
-###Which static site generator to choose
+### Which static site generator to choose
 Well that's a tough one. There are too many great tools out there which can do the same job more or less. You can compare all of them [here][staticgen]
 The most popular one is [Jekyll]. [Hugo] is another one very good as well. But I didn't go with neither of these. I chose my generator based on my priorities and needs.
 
@@ -39,7 +39,7 @@ The most popular one is [Jekyll]. [Hugo] is another one very good as well. But I
 ${img src: 'https://raw.githubusercontent.com/sysgears/grain/master/banner.png', alt: 'Grain Framework', title: 'Grain Framework', width: 800, height: 350}
 </center>
 
-###Going with Grain
+### Going with Grain
 What made me choose [Grain] as my primary static generator? Well I'm a fan of cross platform solutions and Jekyll [is not officially supported][JekyllWindows] as 
 cross platform. Although you could make it work on Windows (my Main OS) using 3rd party dependencies like [Chocolatey] and executing it via commands like 
 `bundle exec jekyll build` but Meh that seemed like too much hassle for me. I'm a java developer myself so why can't I find a real cross platform static generator
