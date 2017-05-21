@@ -8,7 +8,7 @@ categories: [grain, groovy]
 comments: true   #disables/enables comments section for the post
 published: true
 ---
-###Greetings!
+### Greetings!
 Hello World and welcome to my blog. This is the first post out of many that are yet to come (I hope).
 <!--more-->
 
