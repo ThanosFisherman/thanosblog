@@ -3,6 +3,7 @@ import com.sysgears.theme.deploy.GHPagesDeployer
 import com.sysgears.theme.taglib.OctopressTagLib
 import com.sysgears.theme.taglib.ThemeTagLib
 
+Locale.setDefault(new Locale("el","GR"))
 // Resource mapper and tag libs.
 resource_mapper = new ResourceMapper(site).map
 tag_libs = [ThemeTagLib, OctopressTagLib]
