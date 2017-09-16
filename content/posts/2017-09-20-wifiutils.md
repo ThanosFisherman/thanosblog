@@ -2,9 +2,8 @@
 layout: post
 keywords: android, library, wifi, utils, auto, connect
 title: "Easily Connect to WiFi Networks"
-date: "2017-08-15 23:00"
+date: "2017-09-20 23:00"
 icon: fa fa-sticky-note
-metaImage: "/images/posts/mayi_flow.png"
 categories: [android, android-library, wifi]
 comments: true   #disables/enables comments section for the post
 published: true
@@ -168,6 +167,9 @@ My app of course <a href="${link '/gwparedirect.html'}">GWPA Finder</a> Duh :P
 There are a few more things to cover in this tutorial. Hopefully I will improve upon this in the future.
 
 Feel free to add/correct/fix something to this library, I will be glad to improve it with your help.
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<a class="github-button" href="https://github.com/ThanosFisherman/WifiUtils" data-style="mega" data-show-count="true" aria-label="Star ThanosFisherman/WifiUtils on GitHub">Star</a>
 
 License
 -------
